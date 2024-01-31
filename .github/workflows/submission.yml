@@ -33,7 +33,7 @@ jobs:
             _BostonBridge Hackathon Team_
           
           reactions: '+1'
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
 
   add-to-project:
