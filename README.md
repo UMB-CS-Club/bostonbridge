@@ -57,15 +57,6 @@ Participants can look forward to various fun activities including a geoguesser t
 
 [Details to be added]
 
-## 🤝 Sponsors
-
-We would like to thank our sponsors for their generous support:
-
-- Boston Venture Studio
-- Tea Do Boba
-- UMass Boston
-- Paul English
-
 ## 🚦 Code of Conduct
 
 We adhere to a code of conduct to ensure a welcoming and inclusive environment for all participants.
@@ -80,3 +71,16 @@ Let's come together to make a difference, learn, and have fun!
 ---
 
 Good luck to all participants!
+
+## 🤝 Sponsors
+
+We would like to thank our sponsors for their generous support:
+
+- Boston Venture Studio
+- Tea Do Boba
+- UMass Boston
+- Paul English
+
+![Green and White  LinkedIn Header (1)](https://github.com/UMB-CS-Club/bostonbridge/assets/78832141/5c49978e-56c0-4d41-95b3-10665dce12a9)
+
+  
