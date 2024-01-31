@@ -1,0 +1,51 @@
+name: Post-Submission Processing
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  Create-Comment:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Create comment
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            🎉 **Thank you for submitting your project to the BostonBridge Hackathon 2024!** 🎉
+
+            Hi @${{ github.event.issue.user.login }}!! We've successfully received your submission. Here's a quick rundown of what happens next:
+            
+            1. **Submission Review:** Our judges will review your submission to ensure it meets all the hackathon criteria.
+            2. **Presentation:** You will be invited to present your project to the judges and other participants, you will have 3 minutes to present your project and 2 minutes for Q&A.
+            3. **Notification:** You'll be updated about the status of your submission as soon as the review is complete.
+            
+            🔍 **In the Meantime:**
+            - If you need to update your submission or have any queries, feel free to reply to this issue.
+            - Keep an eye on this thread for any updates or further instructions.
+            
+            🍀 **Good Luck!**
+            We're thrilled to see your innovative solution and wish you the best in the hackathon.
+            
+            **Best Regards,**
+            _BostonBridge Hackathon Team_
+          
+          reactions: '+1'
+
+
+  add-to-project:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Add issue to project
+        uses: actions/add-to-project
+        with:
+          # You can target a project in a different organization
+          # to the issue
+          project-url: https://github.com/orgs/UMB-CS-Club/projects/1
+          github-token: ${{ secrets.TOKEN }}
+          labeled: submission, needreview
+          label-operator: OR
