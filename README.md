@@ -1,3 +1,6 @@
+![Green and White  LinkedIn Header](https://github.com/UMB-CS-Club/bostonbridge/assets/78832141/f4d330c7-b640-477b-ae7b-7dd34904bd03)
+
+
 # 🌉 BostonBridge Hackathon 2024 at UMass Boston
 
 Welcome to the repository for the 🚀 BostonBridge Hackathon 2024, hosted by the Computer Science Club at UMass Boston. This event is dedicated to addressing the unique challenges faced by commuter students at UMass Boston, with a focus on better integrating them into city life.
