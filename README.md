@@ -55,7 +55,27 @@ Participants can look forward to various fun activities including a geoguesser t
 
 ## 📤 Submission Process
 
-[Details to be added]
+Things to keep in mind when submitting your project:
+1. All projects must have a github repository.
+2. All projects must have a README.md file with the following information:
+   - Project Name
+   - Team Members
+   - Project Description
+   - Technologies Used
+   - Installation Instructions
+   - Usage Instructions
+   - Screenshots
+   - Demo Video
+   - Acknowledgements
+3. Any sort of plagiarism will result in disqualification.
+
+Follow the steps to submit your project in the hackathon:
+
+- Visit the Issues tab in the respository and click on New Issue
+
+- Find the BostonBridge Hackathon Submission option and click on Get Started
+
+- Fill in the details of your project and submit the issue. **Only one person per team needs to submit the project.**
 
 ## 🚦 Code of Conduct
 
@@ -82,5 +102,3 @@ We would like to thank our sponsors for their generous support:
 - Paul English
 
 ![Green and White  LinkedIn Header (1)](https://github.com/UMB-CS-Club/bostonbridge/assets/78832141/5c49978e-56c0-4d41-95b3-10665dce12a9)
-
-  
