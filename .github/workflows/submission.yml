@@ -2,7 +2,7 @@ name: Post-Submission Processing
 
 on:
   issues:
-    types: [opened]
+    types: [opened, reopened]
 
 jobs:
   Create-Comment:
