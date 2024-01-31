@@ -72,10 +72,19 @@ Things to keep in mind when submitting your project:
 Follow the steps to submit your project in the hackathon:
 
 - Visit the Issues tab in the respository and click on New Issue
+  
+  ![image](https://github.com/UMB-CS-Club/bostonbridge/assets/78832141/0ff92e8a-4197-4e5e-8c45-935e5d4b2cd6)
+
 
 - Find the BostonBridge Hackathon Submission option and click on Get Started
 
-- Fill in the details of your project and submit the issue. **Only one person per team needs to submit the project.**
+  ![image](https://github.com/UMB-CS-Club/bostonbridge/assets/78832141/cefed2e8-c724-41ea-aba2-0ac6d7aa8901)
+
+
+- Fill in the details of your project and submit the issue. Please, do not remove the default title "[Project]:", just add your project name at the end. **Only one person per team needs to submit the project.**
+
+  ![image](https://github.com/UMB-CS-Club/bostonbridge/assets/78832141/e8e5ac89-e404-4f9a-83b6-0978e0f27399)
+
 
 ## 🚦 Code of Conduct
 
