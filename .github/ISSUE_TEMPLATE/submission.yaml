@@ -96,3 +96,5 @@ body:
       options:
         - label: I agree to follow this BostonBridge hackathon's Rules and Code of Conduct
           required: true
+
+# Credits for this template: https://github.com/adityaoberai/hackathon-submissions-platform-template/tree/main
