@@ -1,0 +1,107 @@
+.parent-software {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: white;
+  padding-bottom: 10vh;
+}
+.parent-software-title {
+  padding-top: 2vh;
+  font-size: 3.5vw;
+  color: rgb(188, 219, 244);
+  font-family: audiowide;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5.5vw;
+    padding: 2vh 2vw;
+  }
+}
+.projects-disclaimer {
+  font-size: 1.4vw;
+  padding: 3vh 2vw;
+  font-family: exo;
+  font-weight: 700;
+  color: rgb(189, 225, 254);
+  text-transform: uppercase;
+  text-align: center;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 2.5vw;
+  }
+}
+.software-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 2vh 5vw;
+  column-gap: 5vw;
+  row-gap: 10vh;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    grid-template-columns: 1fr;
+    row-gap: 5vh;
+    flex-direction: column;
+  }
+}
+
+.software-content {
+  flex-basis: 45%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px dotted white;
+  padding: 2vh 0vw;
+  border-radius: 1vw;
+  gap: 2vh;
+  transition: all 0.3s linear;
+  overflow-y: hidden;
+  background-color: rgb(188, 219, 244, 0.1);
+  backdrop-filter: blur(1vw);
+  cursor: pointer;
+  text-align: center;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    border-radius: 2vw;
+    padding: 1vh 1vw;
+    width: 100%;
+  }
+}
+.projects-view {
+  display: block;
+}
+.projects-close {
+  display: none;
+}
+.software-content-title {
+  font-size: 1.5vw;
+  font-family: exo;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0vh 1vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 4vw;
+    padding: 0vh 1vw;
+  }
+}
+.software-content-description {
+  padding: 0vh 1vw;
+  text-align: justify;
+  animation: softwareFade 0.3s ease-in forwards;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 4vw;
+    padding: 1vh 2vw;
+  }
+}
+@keyframes softwareFade {
+  0% {
+    opacity: 0;
+    transform: translateY(5vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0vh);
+  }
+}

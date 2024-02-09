@@ -1,0 +1,864 @@
+.parent_hero {
+  padding-right: 1vw;
+  padding-left: 6vw;
+  padding-top: 3vh;
+  position: relative;
+  isolation: isolate;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding: 0 2vw;
+  }
+}
+
+.parent_hero::after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  opacity: 0.1;
+  background-image: url("/images/topography.svg");
+}
+
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .parent_hero::after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    inset: 0;
+    opacity: 0.1;
+    background-image: url("/images/topography.svg");
+  }
+}
+
+.tag-hero-mobile {
+  display: flex;
+  align-items: flex-end;
+  gap: 1vw;
+  position: relative;
+  z-index: -1;
+  padding: 0;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2vw;
+  }
+}
+
+/* .hero-srm-logo {
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 10vw;
+  }
+} */
+
+/* .hero-srmvec-logo {
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 15vw;
+  }
+} */
+
+.parent_hero .tag {
+  position: relative;
+  font-family: poppins;
+  font-weight: 500;
+  color: black;
+  border: 1px solid grey;
+  font-size: 1.1vw;
+  padding: 0vh 0.4vw;
+  border-radius: 1vw;
+  margin-bottom: 2vh;
+  margin-top: 5vh;
+  font-weight: 600;
+  display: flex;
+  gap: 0.3vw;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 2.5vw;
+    padding: 0.2vh 1vw;
+    margin-top: 3vh;
+    text-align: center;
+    font-weight: 600;
+    gap: 1vw;
+  }
+}
+
+.tag>div {
+  display: flex;
+  align-items: flex-start;
+}
+
+.tag>div>span {
+  font-size: 0.7vw;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 2vw;
+  }
+}
+
+.parent_hero .column {
+  display: flex;
+  justify-content: space-between;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.parent_hero .column .left_side {
+  padding-top: 2vh;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding: 0;
+  }
+}
+
+.parent_hero .title1 {
+  position: relative;
+  font-size: 4.7vw;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 110%;
+  font-family: liger;
+  margin-top: 3vh;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 9vw;
+  }
+}
+
+/* .title1::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -24.5vw;
+  top: -28vh;
+  bottom: 0;
+  right: 0;
+  scale: 0.45;
+  background-size: contain;
+  transform: rotate(-23deg);
+  background-repeat: no-repeat;
+  background-image: url("/images/curve.webp");
+}
+.curve {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: -30vh;
+  bottom: 0;
+  right: 0.5vw;
+  scale: 0.19;
+  background-size: contain;
+  transform: rotate(-40deg) scaleX(-1);
+  background-repeat: no-repeat;
+  background-image: url("/images/curve.webp");
+} */
+/* .tag1 {
+  position: absolute;
+  font-size: 1vw;
+  top: 7vh;
+  left: 0vw;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: suggested;
+} */
+
+.br {
+  display: block;
+  margin-bottom: 0em;
+}
+
+.parent_hero .title1 .hackathon {
+  position: relative;
+  font-family: liger;
+}
+
+.parent_hero .title1 .hackathon::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  height: 4vh;
+  width: 0;
+  left: 0;
+  bottom: 1vh;
+  background: rgb(243, 158, 172, 0.7);
+  animation: line 1s ease-in-out forwards;
+}
+
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .parent_hero .title1 .hackathon::after {
+    height: 2vh;
+  }
+}
+
+@keyframes line {
+  100% {
+    width: 100%;
+  }
+}
+
+.parent_hero .title1 .description {
+  margin-top: 8vh;
+  font-size: 1.2vw;
+  font-weight: 500;
+  font-family: "arial";
+  line-height: normal;
+  text-transform: none;
+  letter-spacing: 0px;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: 0;
+    font-size: 2.8vw;
+    font-weight: 400;
+  }
+}
+
+.parent_hero .title1 .description span {
+  font-weight: 700;
+}
+
+.register_now {
+  margin-top: 5vh;
+  position: relative;
+  padding: 0.5vh 0.5vw;
+  background-color: black;
+  border-radius: 2vw;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20vw;
+  height: fit-content;
+  transition: all 0.3s ease-in-out;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: 2vh;
+    padding: 0 1vw;
+    width: 60vw;
+  }
+}
+
+.register_now:hover {
+  /* width: 40vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 62vw;
+  } */
+}
+
+.register_now a {
+  text-decoration: none;
+  font-size: 1.4vw;
+  letter-spacing: -10px;
+  color: white;
+  font-family: mars;
+  font-weight: bold;
+  margin-right: 0.5rem;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 4vw;
+    letter-spacing: -6px;
+  }
+}
+
+.countdown-main {
+  margin-top: 5vh;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: 2vh;
+  }
+}
+
+.countdown-text {
+  font-size: 3vw;
+  font-family: "Franklin Gothic Medium";
+  font-weight: 600;
+  background-color: #6b0f1a;
+  background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.countdown {
+  position: relative;
+  display: flex;
+  gap: 1.5vw;
+  align-items: center;
+  background-image: url("/images/purple4.webp");
+  width: fit-content;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1vw;
+  padding: 2vh 1vw;
+  isolation: isolate;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    border-radius: 3vw;
+    overflow: hidden;
+    padding: 1vh 1vw;
+  }
+}
+
+.countdown::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(0, 0, 0, 0.3);
+  z-index: -1;
+  border-radius: 1vw;
+}
+
+.countdown .day-card,
+.hour-card,
+.min-card,
+.sec-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2vw;
+  width: 7vw;
+  border-radius: 1vw;
+  color: white;
+  backdrop-filter: blur(0.5vw);
+  isolation: isolate;
+  overflow: hidden;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 3vw;
+    width: 18vw;
+  }
+}
+
+.countdown .day-card::after,
+.hour-card::after,
+.min-card::after,
+.sec-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 1;
+  background: rgb(255, 255, 255, 0.1);
+}
+
+.sep {
+  color: white;
+  margin-bottom: 5vh;
+  font-size: 4vw;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 10vw;
+    margin-bottom: 2vh;
+  }
+}
+
+.countdown .day,
+.hours,
+.minutes,
+.seconds {
+  letter-spacing: 15px;
+  color: white;
+  font-family: technology;
+  font-weight: 900;
+  padding: 0vh 0vw;
+  font-size: 4vw;
+  border-radius: 1vw;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 10vw;
+  }
+}
+
+.right_side {
+  display: grid;
+  flex-basis: 43%;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5vh 1vw;
+  margin-top: -2vh;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0vh 5vw;
+  }
+}
+
+.animated-div {
+  animation: slide 0.8s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-5vh);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-div:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.animated-div:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.animated-div:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.animated-div:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+.arrow-right-icon {
+  width: 30px;
+  height: 100%;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 40px;
+  }
+}
+
+.right_side .col1 {
+  position: relative;
+  padding: 1vw;
+  margin-top: 9vh;
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1vw;
+  background-color: #4d4855;
+  background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+  background-image: url("/images/planet2.webp");
+  isolation: isolate;
+  transition: all 0.1s linear;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin: 0;
+    padding: 2vh 5vw;
+    border-radius: 3vw;
+    width: 90vw;
+  }
+}
+
+.col1:hover {
+  transition: all 0.1s linear;
+  scale: 1.01;
+}
+
+.col2:hover {
+  transition: all 0.1s linear;
+  scale: 1.01;
+}
+
+.col3:hover {
+  transition: all 0.1s linear;
+  scale: 1.01;
+}
+
+.col4:hover {
+  transition: all 0.1s linear;
+  scale: 1.01;
+}
+
+.col6:hover {
+  transition: all 0.1s linear;
+  scale: 1.01;
+}
+
+.right_side .col1::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  backdrop-filter: blur(1.5px);
+  border-radius: 1vw;
+  box-shadow: 0vw 15vh 1vw 1vw black;
+}
+
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .right_side .col1::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    backdrop-filter: blur(1.5px);
+    border-radius: 5vw;
+    box-shadow: 0vw 0vh 0vw 0vw black;
+  }
+}
+
+.right_side .col1 .text {
+  color: #d9e4f5;
+  background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+  background-clip: text;
+  font-family: poppins;
+  font-weight: 900;
+  font-size: 1.5vw;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 2px dotted white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5vw;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 8vw;
+  }
+}
+
+.right_side .col1 .text>div {
+  display: flex;
+  gap: 0.3vw;
+}
+
+.right_side .col1 .text>div>div {
+  display: flex;
+  align-items: flex-start;
+}
+
+.right_side .col1 .text>div>div>div:nth-child(2) {
+  font-size: 1vw;
+}
+
+.calender-icon {
+  width: 25px;
+  height: 100%;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 35px;
+  }
+}
+
+.right_side .col1 .text2 {
+  color: white;
+  margin-top: 10vh;
+  font-size: 1.2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px dotted slategrey;
+  cursor: pointer;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+  }
+}
+
+.right_side .col1 .text3 {
+  color: white;
+  margin-top: 3vh;
+  font-size: 1.2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px dotted slategrey;
+  cursor: pointer;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+  }
+}
+
+.right_side .col2 {
+  position: relative;
+  height: fit-content;
+  padding: 1vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1vw;
+  background-color: #4d4855;
+  background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+  background-image: url("/images/light.webp");
+  isolation: isolate;
+  overflow: hidden;
+  transition: all 0.1s linear;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: 1vh;
+    padding: 5vw;
+    border-radius: 5vw;
+  }
+}
+
+.right_side .col2::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  backdrop-filter: blur(1.5px);
+  background: black;
+  opacity: 0.6;
+}
+
+.info-icon {
+  width: 25px;
+  height: 100%;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 40px;
+  }
+}
+
+.right_side .col2 .text4 {
+  color: #d9e4f5;
+  background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+  background-clip: text;
+  font-family: poppins;
+  font-weight: 900;
+  font-size: 1.3vw;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 2px dotted white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 7vw;
+  }
+}
+
+.right_side .col2 .text5 {
+  color: white;
+  margin-top: 10vh;
+  font-size: 1.2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px dotted slategrey;
+  cursor: pointer;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+  }
+}
+
+.right_side .col2 .text6 {
+  margin-top: 3vh;
+  font-size: 1.2vw;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px dotted slategrey;
+  color: white;
+  justify-content: space-between;
+  cursor: pointer;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+  }
+}
+
+.right_side .col3 {
+  /* margin-top: 1vh; */
+  position: relative;
+  height: fit-content;
+  padding: 1vw;
+  background-repeat: no-repeat;
+  border-radius: 1vw;
+  background-color: #4d4855;
+  background-image: url("/images/motherboard.webp");
+  isolation: isolate;
+  overflow: hidden;
+  border: 0.2vw solid black;
+  transition: all 0.1s linear;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: 2vh;
+    border-radius: 4vw;
+    padding: 2vh 5vw;
+  }
+}
+
+.right_side .col3::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  backdrop-filter: blur(3px);
+  background-color: rgb(213, 254, 253);
+  background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%);
+  opacity: 0.4;
+  animation: dissolve 7s infinite alternate;
+}
+
+@keyframes dissolve {
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.right_side .col3 .text7 {
+  color: purple;
+  text-transform: uppercase;
+  font-family: exo;
+  font-weight: 900;
+  text-align: center;
+  font-size: 1.3vw;
+  letter-spacing: 2px;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 6vw;
+  }
+}
+
+.right_side .col3 .text8 {
+  margin-top: 5vh;
+  border-bottom: 3px dotted black;
+  color: black;
+  font-size: 1.2vw;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+  }
+}
+
+.right_side .col3 .text9 {
+  cursor: pointer;
+  margin-top: 3vh;
+  padding-bottom: 1vh;
+  color: black;
+  border-bottom: 3px dotted black;
+  font-size: 1.2vw;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+  }
+}
+
+.right_side .col4 {
+  margin-top: -4vh;
+  position: relative;
+  height: fit-content;
+  padding: 1vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1vw;
+  background-color: #537895;
+  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+  isolation: isolate;
+  overflow: hidden;
+  transition: all 0.1s linear;
+  cursor: pointer;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: 2vh;
+    border-radius: 2vw;
+    padding: 2vh 5vw;
+  }
+}
+
+.right_side .col4::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0;
+}
+
+.right_side .col4 .text10,
+.text13 {
+  color: white;
+  font-weight: 600;
+  font-size: 1.2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px dotted white;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 6vw;
+  }
+}
+
+.location-icon {
+  width: 35px;
+  height: 100%;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 45px;
+  }
+}
+
+.right_side .col4 .text11,
+.text14 {
+  font-family: zeniq;
+  font-size: 0.92vw;
+  padding-top: 2vh;
+  color: white;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 3.5vw;
+    padding-top: 1.5vh;
+  }
+}
+
+.right_side .col4 .text12,
+.text15 {
+  padding-top: 0.7vh;
+  font-family: zeniq;
+  font-size: 0.9vw;
+  color: white;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 3.5vw;
+  }
+}
+
+.venue-text-mobile {
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 4vw;
+  }
+}
+
+.right_side .col6 {
+  margin-top: -10vh;
+  position: relative;
+  height: fit-content;
+  padding: 1vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1vw;
+  background-color: #485461;
+  background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+  isolation: isolate;
+  transition: all 0.1s linear;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: 0.5vh;
+    border-radius: 2vw;
+    padding: 1vh 3vw;
+  }
+}

@@ -1,0 +1,128 @@
+.parent-faqs {
+  margin: 7vh 0vw;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin: 5vh 1vw;
+  }
+}
+.faqs-title {
+  font-size: 45px;
+  font-family: "russo one";
+  letter-spacing: 2px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  position: relative;
+  padding-left: 6vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 40px;
+    padding-left: 15vw;
+  }
+}
+
+.faqs-title::after {
+  content: "";
+  z-index: -1;
+  border-bottom: 4px solid #d500ed;
+  border-image: linear-gradient(
+    to right top,
+    #ffda00,
+    #ffaa17,
+    #ff7545,
+    #ff3c6f,
+    #ff0099,
+    #ed00ae,
+    #d100c4,
+    #aa0ada,
+    #9700e1,
+    #7f00e7,
+    #5e00ef,
+    #1b0cf6
+  );
+  border-image-slice: 1;
+  width: 50vw;
+}
+.faqs-title img {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 60px;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 55px;
+  }
+}
+
+.faqs-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10vw;
+  gap: 5vh;
+  width: 80%;
+  height: 100%;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 100%;
+    margin: 0;
+    gap: 3vh;
+  }
+}
+
+.faqs-content {
+  border: 2px dotted black;
+  padding: 0.5vh 1vw;
+  border-radius: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2vh;
+  overflow-y: hidden;
+  position: relative;
+  cursor: pointer;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    border-radius: 1vw;
+  }
+}
+.faqs-view {
+  display: block;
+}
+.faqs-content-title {
+  font-size: 1.6vw;
+  font-weight: 800;
+  font-family: Arial;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 4vw;
+  }
+}
+
+.faqs-content-description {
+  padding: 0vh 0vw;
+  text-align: justify;
+  animation: faqsFade 0.3s ease-in forwards;
+  display: none;
+}
+@keyframes faqsFade {
+  0% {
+    opacity: 0;
+    transform: translateY(5vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0vh);
+  }
+}
+
+.arrow-transform {
+  transform: rotate(90deg);
+}
+
+.faq-visible {
+  display: block;
+}
