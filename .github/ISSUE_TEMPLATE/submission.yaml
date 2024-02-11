@@ -7,7 +7,6 @@ body:
     attributes:
       value: |
         ![BostonBridge Hackathon](https://raw.githubusercontent.com/UMB-CS-Club/bostonbridge/main/Banner.jpeg)
-        Thanks for participating in the hackathon and creating your submission!
   - type: input
     id: name
     attributes:
