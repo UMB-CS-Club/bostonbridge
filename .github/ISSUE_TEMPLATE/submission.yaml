@@ -6,6 +6,8 @@ body:
   - type: markdown
     attributes:
       value: |
+        # Markdwon to insert an image
+        ![BostonBridge Hackathon](https://raw.githubusercontent.com/UMB-CS-Club/bostonbridge/main/Banner.jpeg)
         Thanks for participating in the hackathon and creating your submission!
   - type: input
     id: name
