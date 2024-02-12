@@ -39,6 +39,7 @@
     "react-google-button": "^0.7.2",
     "react-icons": "^4.10.1",
     "react-router-dom": "^6.14.2",
+    "react-slideshow-image": "^4.3.0",
     "react-social-icons": "^5.15.0",
     "sitemap": "^7.1.1",
     "spdy": "^4.0.2",

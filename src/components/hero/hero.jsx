@@ -10,6 +10,7 @@ import { ReactComponent as Calender } from "../../assets/calender.svg";
 import { ReactComponent as Info } from "../../assets/info.svg";
 import { ReactComponent as Location } from "../../assets/location.svg";
 import Agenda from "./agenda";
+import Album from "./album";
 import "./hero.css";
 import Schedule from "./schedule";
 import Sponsors from "./sponsors";
@@ -257,6 +258,7 @@ const hero = () => {
       <div className="bg-sep"></div>
       <Sponsors />
       <Widget id="sr0nBKuL" style={{ height: 600 }} className="my-form" />
+      <Album />
       <Footer />
     </React.Fragment>
   );
