@@ -29,6 +29,20 @@ const sponsors = () => {
           </div>
           <div className="sponsors-border">
             <div>
+              <img src="./oracle.png" alt="Oracle" />
+            </div>
+            <div className="sponsors-container-sub">
+              <h1 className="sponsor-title">
+                <a href="https://paulenglish.com/" target="_blank">
+                  {" "}
+                  Oracle{" "}
+                </a>
+              </h1>
+            </div>{" "}
+            {/* <LaunchLink className="link-launch-icon" /> */}
+          </div>
+          <div className="sponsors-border">
+            <div>
               <img src="https://media.discordapp.net/attachments/1197256108604145765/1202421293199130706/image_1.png?ex=65cd6518&is=65baf018&hm=379a23284ea688fa87828fb6e0eda7c052405e4b52bc720e4c4f64cacce300cc&=&format=webp&quality=lossless" alt="Tea Do" />
             </div>
             <div className="sponsors-container-sub">
