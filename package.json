@@ -43,7 +43,7 @@
     "react-social-icons": "^5.15.0",
     "sitemap": "^7.1.1",
     "spdy": "^4.0.2",
-    "styled-components": "^6.0.4",
+    "styled-components": "*",
     "tailwindcss": "^3.3.3",
     "vanilla-tilt": "^1.8.0",
     "vite-plugin-svgr": "^3.2.0"
